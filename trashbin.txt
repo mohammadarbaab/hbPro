@@ -1,0 +1,5016 @@
+
+    /* align-items: center; */
+    margin: auto 0;
+ 
+.nav-links-container.active {
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: auto 0;
+  }
+ 
+
+    background-color: aqua;
+ 
+
+    justify-content: center;
+ 
+
+    margin-left: 20px;
+ 
+
+    margin-left: 30px;
+ 
+
+    justify-content: center;
+    align-items: center;
+ 
+navbar-container img
+ 
+.menu-icon {
+    display: none;
+    padding-right: 10px;
+  }
+ 
+width: 100%;
+ 
+
+    width: 100px;
+    height: 100px;
+ 
+
+  .logo {
+    
+  }
+ 
+/* Base styles */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Off-screen initially */
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+  .nav-links-container.active {
+    left: 0; /* Slide in */
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 193px;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.sidebar-logo {
+  width: 100px; /* Adjust size as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center   the logo */
+}
+
+/* Media query for hiding logo in top navbar when screen size increases */
+@media screen and (min-width: 769px) {
+  .navbar-container .sidebar-logo {
+    display: none;
+  }
+}
+
+
+
+ 
+/* Base styles */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Off-screen initially */
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+  .nav-links-container.active {
+    left: 0; /* Slide in */
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 193px;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.sidebar-logo {
+  width: 100px; /* Adjust size as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center   the logo */
+}
+
+/* Media query for hiding logo in top navbar when screen size increases */
+@media screen and (min-width: 769px) {
+  .navbar-container .sidebar-logo {
+    display: none;
+  }
+}
+
+
+
+ 
+/* Navbar Styles */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  /* padding: 2.2rem 0; */
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 3vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 3rem;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  /* background-color: #00732f; */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.button {
+  width: 193.31px;
+  height: 50px;
+  top: 10px;
+  left: 641.36px;
+  margin-right: 30px;
+  gap: 0px;
+  border-radius: 5px;
+  border: 1px solid #00732f;
+  opacity: 1;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.button .content {
+  width: 151.51px;
+  height: 16px;
+  top: 1px;
+  left: 21px;
+  gap: 0px;
+  opacity: 1;
+  font: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  color: #00732f;
+}
+
+/* .sidebar-logo {
+    width: 100px;
+    display: block;
+    margin: 1rem auto; 
+  } */
+
+/* .dropdown {
+    position: relative;
+  } */
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*  */
+  .navbar-container img{
+    width: 100px;
+    height: 100px;
+  }
+  .menu-icon {
+    display: block; 
+    padding-right: 20px;
+  }
+  .nav-links-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+  }
+
+  .nav-links-container.active {
+    left: 0; 
+    display: flex;
+  }
+
+  /* .nav-links {
+    flex-direction: column; 
+  } */
+
+  /* .nav-links li {
+    padding: 1rem 0;
+  } */
+
+    /* .button {
+      width: 100%;
+    } */
+
+  /* .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  } */
+}
+
+ 
+/* Show menu icon on smaller screens */
+ 
+ Hide menu icon for larger screens
+ 
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none; /* Hide menu icon for larger screens */
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*  */
+  .navbar-container img{
+    width: 100px;
+    height: 100px;
+  }
+  .menu-icon {
+    display: block; /* Show menu icon on smaller screens */
+    padding-right: 20px;
+  }
+  .nav-links-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+  }
+
+  .nav-links-container.active {
+    left: 0; 
+    display: flex;
+  }
+
+  /* .nav-links {
+    flex-direction: column; 
+  } */
+
+  /* .nav-links li {
+    padding: 1rem 0;
+  } */
+
+    /* .button {
+      width: 100%;
+    } */
+
+  /* .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  } */
+}
+ 
+/* Navbar Styles */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  /* padding: 2.2rem 0; */
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 3vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 3rem;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  /* background-color: #00732f; */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.button {
+  width: 193.31px;
+  height: 50px;
+  top: 10px;
+  left: 641.36px;
+  margin-right: 30px;
+  gap: 0px;
+  border-radius: 5px;
+  border: 1px solid #00732f;
+  opacity: 1;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.button .content {
+  width: 151.51px;
+  height: 16px;
+  top: 1px;
+  left: 21px;
+  gap: 0px;
+  opacity: 1;
+  font: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  color: #00732f;
+}
+
+/* .sidebar-logo {
+    width: 100px;
+    display: block;
+    margin: 1rem auto; 
+  } */
+
+/* .dropdown {
+    position: relative;
+  } */
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none; /* Hide menu icon for larger screens */
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*  */
+  .navbar-container img{
+    width: 100px;
+    height: 100px;
+  }
+  .menu-icon {
+    display: block; /* Show menu icon on smaller screens */
+    padding-right: 20px;
+  }
+  .nav-links-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+  }
+
+  .nav-links-container.active {
+    left: 0; 
+    display: flex;
+  }
+
+  /* .nav-links {
+    flex-direction: column; 
+  } */
+
+  /* .nav-links li {
+    padding: 1rem 0;
+  } */
+
+    /* .button {
+      width: 100%;
+    } */
+
+  /* .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  } */
+}
+
+ 
+
+  .navbar-container{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+    position: relative;
+ 
+/* Off-screen initially */
+ 
+/* Slide in */
+ 
+/* Stack links vertically */
+ 
+ /* Full width button on mobile */
+ 
+
+  .navbar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+
+  /* .logo{
+    width: 100px;
+    height: 100px;
+  } */
+ 
+logo
+ 
+.logo {
+    padding-left: 1rem;
+  }
+ 
+
+  font-family: Arial, sans-serif;
+ 
+40px
+ 
+
+    gap: 16px;
+ 
+.title-work{
+    display: flex;
+    flex-direction: column;
+    font: Poppins;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.title-work p{
+    font-size: 14px;
+    width: 92%;
+    font-weight: 400;
+    color: black;
+}
+.title-work h1{
+    font-size: 36px;
+    font-weight: 700;
+    font: Poppins;
+}
+ 
+
+    gap: 0px;
+ 
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white; /* Background color */
+  color: #333; /* Default text color */
+}
+
+ 
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white; /* Background color */
+  color: #333; /* Default text color */
+}
+ 
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* Reset margins for headings */
+}
+ 
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* Reset margins for headings */
+}
+ 
+
+  width: 100%;
+ 
+#f4f4f4
+ 
+../../../assets/Group22.png
+ 
+../../../assets/Group.png
+ 
+../../../assets/edit.png
+ 
+./Title/Title
+ 
+./Title/Title
+ 
+./../../assets/Layer.png
+ 
+../../../assets/document.png
+ 
+../../../assets/Group 33.png
+ 
+./BuyersPost.css
+ 
+/* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .supp-container {
+      flex-direction: column; /* Stack elements vertically */
+      height: 20vh; /* Remove fixed height */
+      align-items: center; /* Center items */
+      display: flex;
+      gap: 20px;
+    }
+    .supp-left h1{
+      margin-top: 20px;
+    }
+  
+    .supp-left,
+    .supp-right {
+      width: 100%; /* Full width for both sections */
+      height: auto; /* Remove fixed height */
+      margin-bottom: 20px; /* Add margin for spacing */
+    }
+  }
+ 
+.supp-container {
+    width: 100%;
+    height: 200px;
+    background: #e8fbff;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .supp-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Use percentage width for larger screens */
+    min-width: 300px; /* Minimum width to prevent elements from becoming too small */
+    height: 200px;
+    
+    position: relative;
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  h1 span {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  h1 span::before,
+  h1 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #d25235; /* Orange underline */
+    left: 0;
+  }
+  
+  h1 span::before {
+    bottom: -5px;
+  }
+  
+  h1 span::after {
+    bottom: -5px;
+  }
+  
+  .supp-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Use percentage width for larger screens */
+    min-width: 250px; /* Minimum width to prevent elements from becoming too small */
+    height: 200px;
+    position: relative;
+    box-sizing: border-box; /* Include padding and border in width */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .supp-right button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    width: 100%; /* Full width button */
+    max-width: 216px; /* Maximum width for larger screens */
+    height: 54px;
+    background: #eb7150;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    border-radius: 5px;
+    border: none; /* Remove unnecessary border */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .supp-container {
+      flex-direction: column; /* Stack elements vertically */
+      height: 20vh; /* Remove fixed height */
+      align-items: center; /* Center items */
+      display: flex;
+      gap: 20px;
+    }
+    .supp-left h1{
+      margin-top: 20px;
+    }
+  
+    .supp-left,
+    .supp-right {
+      width: 100%; /* Full width for both sections */
+      height: auto; /* Remove fixed height */
+      margin-bottom: 20px; /* Add margin for spacing */
+    }
+  }
+ 
+
+      height: auto; /* Remove fixed height */
+ 
+
+      margin-bottom: 20px; /* Add margin for spacing */
+ 
+./Supplier.css
+ 
+
+    .left-yt{
+        margin-left: 10px;
+    }
+ 
+../YoutubeEmbed/YtEmbed
+ 
+DashYt.css
+ 
+../../../assets/check.svg
+ 
+
+      width: 100%; /* Full width buttons on very small screens */
+ 
+
+      max-width: 100%; /* Allow buttons to take full width if needed */
+ 
+
+      max-width: 100%; /* Allow buttons to take full 
+ 
+
+      max-width: 100%; /* Allow buttons to take full 
+ 
+
+      justify-content: center;
+      display: flex;
+      align-items: center;
+ 
+, sans-serif
+ 
+.dash-left h1{
+      font: "Poppins";
+    }
+ 
+.dash-left{
+      font: "Poppins";
+    }
+ 
+./DashboardButton/DashboardButtons
+ 
+
+    margin-top: 12px;
+ 
+
+    margin-top: 10px;
+ 
+
+    margin-top: 20px;
+ 
+
+    align-content: center;
+    justify-content: center;
+    display: flex;
+ 
+../../assets/placeholder 1.png
+ 
+../../assets/suitcase 1.png
+ 
+../../assets/hero-habot.PNG
+ 
+
+  background-color: #00732f;
+ 
+
+  gap: 10px;
+ 
+
+.nav-item{
+  display: flex;
+  flex-direction: row;
+}
+ 
+
+  gap: 10px;
+ 
+
+  width: 10px;
+ 
+
+  gap: 10px;
+ 
+
+  gap: 20px;
+ 
+
+  gap: 10px;
+ 
+
+  margin-right: 10px;
+ 
+
+  background-color: #00732f;
+ 
+
+  background-color: #00732f;
+ 
+
+  background-color: #00732f;
+ 
+
+    gap: 10px;
+ 
+
+    width: 200px;
+ 
+
+  cursor: pointer;
+ 
+
+  cursor: pointer;
+ 
+
+.dropdown-icon{
+}
+ 
+
+  margin-top: 15px;
+ 
+.dropdown-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content.show {
+  display: block;
+  max-height: 200px;
+}
+
+ 
+import './DropDown.css'
+ 
+
+    margin-left: 10px;
+ 
+
+    padding-right: 2.2rem;
+ 
+
+  padding-right: 20px;
+ 
+
+    padding-right: 40px;
+ 
+ .button {
+    width: 193.31px;
+    height: 50px;
+    margin-right: 2rem;
+    border-radius: 5px;
+    border: 1px solid #00732f;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .content {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #00732f;
+  }
+ 
+/* Center logo */
+ 
+
+  .dropdown {
+    position: relative;
+  }
+ 
+
+  .sidebar-logo {
+    width: 100px;
+    display: block;
+    margin: 1rem auto; /* Center logo */
+  }
+ 
+.dropdown-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styling for dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown-content.show {
+    display: block;
+    max-height: 200px;
+  }
+  
+ 
+
+  .sidebar-logo {
+    width: 100px;
+    display: block;
+    margin: 1rem auto; /* Center logo */
+  }
+ 
+
+  .button {
+    width: 193.31px;
+    height: 50px;
+    margin-right: 2rem;
+    border-radius: 5px;
+    border: 1px solid #00732f;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #00732f;
+  }
+  
+ 
+
+    .logo{
+        padding-left: 1rem;
+    }
+ 
+
+    .logo{
+    }
+ 
+
+        margin-right: -20px;
+ 
+
+        padding-right: 20px;
+ 
+.navbar-container {
+    width: 100%;
+    background: #fff;
+    padding: 2.2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    height: 10vh;
+  }
+  .navbar-container .button {
+    margin-right: 2rem; /* Right margin for space */
+  }
+  .logo {
+    width: 181px;
+    padding-left: 3rem;
+    margin-left: 33px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dropdown-icon {
+    margin-left: 4px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    padding: 8px 12px;
+  }
+  .button {
+    width: 193.31px;
+    height: 50px;
+    top: 10px;
+    left: 641.36px;
+    gap: 0px;
+    border-radius: 5px;
+    border: 1px solid #00732f;
+    opacity: 1;
+    background-color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  .button .content {
+    width: 151.51px;
+    height: 16px;
+    top: 1px;
+    left: 21px;
+    gap: 0px;
+    opacity: 1;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    color: #00732f;
+  }
+  
+  .sidebar-logo {
+    width: 100px; /* Adjust size as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center   the logo */
+  }
+  
+  /* Media query for hiding logo in top navbar when screen size increases */
+  @media screen and (min-width: 768px) {
+    .navbar-container .sidebar-logo {
+      display: none;
+    }
+    .navbar-container{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: -100%; /* Off-screen initially */
+      height: 100vh;
+      width: 250px;
+      background: #fff;
+      padding: 5rem 1rem 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: left 0.3s ease; /* Smooth transition */
+    }
+  
+    .nav-links-container.active {
+      left: 0; /* Slide in */
+      display: block;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .nav-links li {
+      padding: 1rem 0;
+    }
+  
+    .button {
+      width: 193px;
+      text-align: center;
+    }
+  
+    .button .content {
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+    }
+  }
+  
+ 
+../assets/logo.png
+ 
+
+import logo from "../assets/logo.png"
+ 
+import "./NavDrop.css
+ 
+"./navDropdown/NavDropdown"
+ 
+from "../../assets/logo.png";
+ 
+from "../../assets/logo.png
+ 
+
+import First from './Pages/First'
+ 
+
+// import Page from './Buttons/Page'
+ 
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 50px;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #f39c12;
+  }
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 1rem 0;
+      z-index: 1;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  }
+  
+ 
+import React, { useState } from 'react';
+import './First.css'
+
+const First = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="logo">MyLogo</div>
+      <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default First;
+
+ 
+
+
+ 
+
+impo
+ 
+
+import './Navbar.css';
+ 
+./Navbar.css
+ 
+Navbar
+ 
+/* Black background with opacity */
+ 
+/* Adjust the blur effect as needed */
+ 
+<Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+            //   paddingTop: "70px",
+              display: "flex",
+              width: "650px",
+              justifyContent: "center",
+              alignItems: "flex-start",
+            }}
+          >
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                paddingTop: "40px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-start",
+              }}
+            >
+              <Grid container spacing={2} justifyContent="center">
+                {buttons.map((button, index) => (
+                  <Grid item key={button.text} xs={6} sm={6} md={6}>
+                    {" "}
+                    {/* xs={6} makes two buttons per row on small screens */}
+                    <Button
+                      variant="outlined"
+                      href={button.link}
+                      sx={{
+                        width:"235px",
+                        height: 65,
+                        padding: "17px",
+                        borderColor: "#e7760d",
+                        color: "black",
+                        fontFamily: '"Inter", sans-serif',
+                        textTransform: "capitalize",
+                        fontSize: "16px",
+                        fontWeight: 500,
+                        lineHeight: "32px",
+                        textAlign: "center",
+                        backgroundColor: "#FFFFFF",
+                        "&:hover": {
+                          opacity: 0.8,
+                        },
+                      }}
+                    >
+                      {button.text}
+                    </Button>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+ 
+  <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+            //   paddingTop: "70px",
+              display: "flex",
+              width: "650px",
+              justifyContent: "center",
+              alignItems: "flex-start",
+            }}
+          >
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                paddingTop: "40px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-start",
+              }}
+            >
+              <Grid container spacing={2} justifyContent="center">
+                {buttons.map((button, index) => (
+                  <Grid item key={button.text} xs={6} sm={6} md={6}>
+                    {" "}
+                    {/* xs={6} makes two buttons per row on small screens */}
+                    <Button
+                      variant="outlined"
+                      href={button.link}
+                      sx={{
+                        width:"235px",
+                        height: 65,
+                        padding: "17px",
+                        borderColor: "#e7760d",
+                        color: "black",
+                        fontFamily: '"Inter", sans-serif',
+                        textTransform: "capitalize",
+                        fontSize: "16px",
+                        fontWeight: 500,
+                        lineHeight: "32px",
+                        textAlign: "center",
+                        backgroundColor: "#FFFFFF",
+                        "&:hover": {
+                          opacity: 0.8,
+                        },
+                      }}
+                    >
+                      {button.text}
+                    </Button>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+ 
+<Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+            //   paddingTop: "70px",
+              display: "flex",
+              width: "650px",
+              justifyContent: "center",
+              alignItems: "flex-start",
+            }}
+          >
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                paddingTop: "40px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-start",
+              }}
+            >
+              <Grid container spacing={2} justifyContent="center">
+                {buttons.map((button, index) => (
+                  <Grid item key={button.text} xs={6} sm={6} md={6}>
+                    {" "}
+                    {/* xs={6} makes two buttons per row on small screens */}
+                    <Button
+                      variant="outlined"
+                      href={button.link}
+                      sx={{
+                        width:"235px",
+                        height: 65,
+                        padding: "17px",
+                        borderColor: "#e7760d",
+                        color: "black",
+                        fontFamily: '"Inter", sans-serif',
+                        textTransform: "capitalize",
+                        fontSize: "16px",
+                        fontWeight: 500,
+                        lineHeight: "32px",
+                        textAlign: "center",
+                        backgroundColor: "#FFFFFF",
+                        "&:hover": {
+                          opacity: 0.8,
+                        },
+                      }}
+                    >
+                      {button.text}
+                    </Button>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+ 
+
+                        marginRight:"20px",
+ 
+
+                        padding: "17px",
+ 
+justifyContent="center"
+ 
+
+                        width: "100%", //Buttons will now take full width of their grid item
+ 
+ <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid item key={button.text} xs={12} sm={6} md={4}>
+                  <Button
+                    variant="outlined"
+                    href={button.link} // Use href for links within the app
+                    sx={{
+                    //   width: "100%",
+                    width:"235px",
+                      height: 65,
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "16px",
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+ 
+style={{paddingTop:"60px"}}
+ 
+
+                    width:"235px",
+ 
+
+                  width: "463px",
+ 
+
+              Signing up with HABOT opens the door to a world of new
+ 
+
+   <Container maxWidth="lg" style={{ marginTop: "20px", background: "gray", padding: "0 0px" ,}}> {/* Use Container for responsive layout */}
+      <Grid container spacing={2} style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}> {/* Use Grid for layout */}
+        <Grid item xs={12} md={6} style={{ width: "100%", maxWidth: "563px" }}> {/* xs={12} makes it full width on small screens, md={6} makes it half width on medium and larger screens */}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "20px",
+              paddingBottom: "40px",
+            }}
+          >
+            <Typography
+              variant="h4"
+              gutterBottom
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: 700,
+                fontSize: "34px",
+                lineHeight: "40px",
+                paddingTop: "40px",
+              }}
+            >
+              Ready to dive into{' '}
+              <span style={{ color: "#271555" }}>HABOT?</span>
+            </Typography>
+            <Typography
+              variant="body1"
+              gutterBottom
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: 300,
+                fontSize: "16px",
+                lineHeight: "24px",
+                maxWidth: "100%",
+                width: "520px",
+                padding: "0 0px",
+              }}
+            >
+              Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+            </Typography>
+            <Button
+              variant="contained"
+              sx={{
+                width: "100%",
+                maxWidth: "316px",
+                height: "54px",
+                borderRadius: "5px",
+                background: "#00732F",
+                color: "white",
+                fontSize: "18px",
+                fontWeight: 600,
+                lineHeight: "24px",
+                textAlign: "center",
+                fontFamily: "Poppins",
+                position: "relative",
+                zIndex: 1,
+              }}
+            >
+              Sign up Today!
+              <img
+                src={vector}
+                style={{
+                  position: "absolute",
+                  left: "calc(50% + 60px)",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  marginLeft: "38px",
+                }}
+                alt="Icon"
+              />
+            </Button>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6} sx={{ paddingTop: "70px", display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text} xs={12} sm={6} md={4}>
+                <Button
+                  variant="outlined"
+                  href={button.link} // Use href for links within the app
+                  sx={{
+                    width: "100%",
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily: '"Inter", sans-serif',
+                    textTransform: "capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
+    </Container>
+ 
+<Typography
+              variant="body1"
+              gutterBottom
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: 300,
+                fontSize: "16px",
+                lineHeight: "24px",
+                height: "100px",
+                maxWidth: "100%",
+                width: "520px",
+                padding: "0 0px",
+              }}
+            >
+ 
+ <Typography
+              variant="h4"
+              gutterBottom
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: 700,
+                fontSize: "34px",
+                lineHeight: "40px",
+                paddingTop: "40px",
+              }}
+            >
+ 
+
+              Signing up with HABOT opens the door to a world of new
+ 
+width:"100%"
+ 
+ <Container style={{ marginTop: "20px", background: "gray", padding: "0 16px" }}>
+  <Box style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+    {/* Left Section */}
+    <Grid2 item xs={12} md={6} style={{ width: "100%", maxWidth: "563px" }}>
+      <Box
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
+          paddingBottom: "40px",
+        }}
+      >
+        <Typography
+          variant="h4"
+          gutterBottom
+          style={{
+            font: "Poppins",
+            fontWeight: "700",
+            fontSize: "34px",
+            lineHeight: "40px",
+            paddingTop: "40px",
+          }}
+        >
+          Ready to dive into{" "}
+          <span style={{ color: "#271555" }}>HABOT?</span>
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          style={{
+            font: "Poppins",
+            fontWeight: "300",
+            fontSize: "16px",
+            lineHeight: "24px",
+            maxWidth: "100%",
+            padding: "0 16px", // Added padding for smaller screens
+          }}
+        >
+          Signing up with HABOT opens the door to a world of new
+          opportunities and potential for business growth. Gain access to
+          a vibrant community of like-minded individuals, unlock valuable
+          resources, and take the first step towards realizing your
+          entrepreneurial dreams.
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          style={{
+            width: "100%",
+            maxWidth: "316px",
+            height: "54px",
+            borderRadius: "5px",
+            background: "#00732F",
+            color: "white",
+            fontSize: "18px",
+            fontWeight: "600",
+            lineHeight: "24px",
+            textAlign: "center",
+            font: "Poppins",
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          Sign up Today !
+          <img
+            src={vector}
+            style={{
+              position: "absolute",
+              left: "calc(50% + 60px)",
+              top: "50%",
+              transform: "translateY(-50%)",
+              marginLeft: "38px",
+            }}
+            alt="Icon"
+          />
+        </Button>
+      </Box>
+    </Grid2>
+
+    {/* Right Section */}
+    <Grid2 item xs={12} md={6} style={{ paddingTop: "70px", display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+      <Grid container spacing={2} justifyContent="center">
+        {buttons.map((button) => (
+          <Grid item key={button.text} xs={12} sm={6} md={4}>
+            <Button
+              variant="outlined"
+              to={button.link}
+              sx={{
+                width: "100%",
+                height: 65,
+                padding: "17px",
+                borderColor: "#e7760d",
+                color: "black",
+                fontFamily: '"Inter", sans-serif',
+                textTransform: "capitalize",
+                fontSize: "16px",
+                fontWeight: 500,
+                lineHeight: "32px",
+                textAlign: "center",
+                backgroundColor: "#FFFFFF",
+                "&:hover": {
+                  opacity: 0.8,
+                },
+              }}
+            >
+              {button.text}
+            </Button>
+          </Grid>
+        ))}
+      </Grid>
+    </Grid2>
+  </Box>
+</Container>
+ 
+
+   <Container style={{ marginTop: "20px", background: "gray", padding: "0 16px" }}>
+  <Box style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+    {/* Left Section */}
+    <Grid2 item xs={12} md={6} style={{ width: "100%", maxWidth: "563px" }}>
+      <Box
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
+          paddingBottom: "40px",
+        }}
+      >
+        <Typography
+          variant="h4"
+          gutterBottom
+          style={{
+            font: "Poppins",
+            fontWeight: "700",
+            fontSize: "34px",
+            lineHeight: "40px",
+            paddingTop: "40px",
+          }}
+        >
+          Ready to dive into{" "}
+          <span style={{ color: "#271555" }}>HABOT?</span>
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          style={{
+            font: "Poppins",
+            fontWeight: "300",
+            fontSize: "16px",
+            lineHeight: "24px",
+            width:"520px"
+          }}
+        >
+          Signing up with HABOT opens the door to a world of new
+          opportunities and potential for business growth. Gain access to
+          a vibrant community of like-minded individuals, unlock valuable
+          resources, and take the first step towards realizing your
+          entrepreneurial dreams.
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          style={{
+            width: "100%",
+            maxWidth: "316px",
+            height: "54px",
+            borderRadius: "5px",
+            background: "#00732F",
+            color: "white",
+            fontSize: "18px",
+            fontWeight: "600",
+            lineHeight: "24px",
+            textAlign: "center",
+            font: "Poppins",
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          Sign up Today !
+          <img
+            src={vector}
+            style={{
+              position: "absolute",
+              left: "calc(50% + 60px)",
+              top: "50%",
+              transform: "translateY(-50%)",
+              marginLeft: "38px",
+            }}
+            alt="Icon"
+          />
+        </Button>
+      </Box>
+    </Grid2>
+
+    {/* Right Section */}
+    <Box style={{ width: "600px", maxWidth: "650px", paddingTop: "70px" }}>
+      <Grid container spacing={2} justifyContent="flex-start">
+        {buttons.map((button) => (
+          <Grid item key={button.text} xs={12} sm={6} md={4}>
+            <Button
+              variant="outlined"
+              to={button.link}
+              sx={{
+                width: "100%",
+                height: 65,
+                padding: "17px",
+                borderColor: "#e7760d",
+                color: "black",
+                fontFamily: '"Inter", sans-serif',
+                textTransform: "capitalize",
+                fontSize: "16px",
+                fontWeight: 500,
+                lineHeight: "32px",
+                textAlign: "center",
+                backgroundColor: "#FFFFFF",
+                "&:hover": {
+                  opacity: 0.8,
+                },
+              }}
+            >
+              {button.text}
+            </Button>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  </Box>
+</Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray", padding: "0 16px" }}>
+  <Box style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+    {/* Left Section */}
+    <Grid2 item xs={12} md={6} style={{ width: "100%", maxWidth: "563px" }}>
+      <Box
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
+          paddingBottom: "40px",
+        }}
+      >
+        <Typography
+          variant="h4"
+          gutterBottom
+          style={{
+            font: "Poppins",
+            fontWeight: "700",
+            fontSize: "34px",
+            lineHeight: "40px",
+            paddingTop: "40px",
+          }}
+        >
+          Ready to dive into{" "}
+          <span style={{ color: "#271555" }}>HABOT?</span>
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          style={{
+            font: "Poppins",
+            fontWeight: "300",
+            fontSize: "16px",
+            lineHeight: "24px",
+          }}
+        >
+          Signing up with HABOT opens the door to a world of new
+          opportunities and potential for business growth. Gain access to
+          a vibrant community of like-minded individuals, unlock valuable
+          resources, and take the first step towards realizing your
+          entrepreneurial dreams.
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          style={{
+            width: "100%",
+            maxWidth: "316px",
+            height: "54px",
+            borderRadius: "5px",
+            background: "#00732F",
+            color: "white",
+            fontSize: "18px",
+            fontWeight: "600",
+            lineHeight: "24px",
+            textAlign: "center",
+            font: "Poppins",
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          Sign up Today !
+          <img
+            src={vector}
+            style={{
+              position: "absolute",
+              left: "calc(50% + 60px)",
+              top: "50%",
+              transform: "translateY(-50%)",
+              marginLeft: "38px",
+            }}
+            alt="Icon"
+          />
+        </Button>
+      </Box>
+    </Grid2>
+
+    {/* Right Section */}
+    <Box style={{ width: "100%", maxWidth: "650px", paddingTop: "60px" }}>
+      <Grid container spacing={2} justifyContent="center">
+        {buttons.map((button) => (
+          <Grid item key={button.text} xs={12} sm={6} md={4}>
+            <Button
+              variant="outlined"
+              to={button.link}
+              sx={{
+                width: "100%",
+                height: 65,
+                padding: "17px",
+                borderColor: "#e7760d",
+                color: "black",
+                fontFamily: '"Inter", sans-serif',
+                textTransform: "capitalize",
+                fontSize: "16px",
+                fontWeight: 500,
+                lineHeight: "32px",
+                textAlign: "center",
+                backgroundColor: "#FFFFFF",
+                "&:hover": {
+                  opacity: 0.8,
+                },
+              }}
+            >
+              {button.text}
+            </Button>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  </Box>
+</Container>
+ 
+  <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",width:"100%" }}
+        >
+          {/* Left Section */}
+          <Grid2
+          container
+            item
+            xs={12}
+            md={6}
+            style={{ padding: "20px",width:"50%" }} // Adjusted width and padding for responsiveness
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width for small screens
+                  maxWidth: "316px", // Keep max width for larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+         <Grid2>
+         <Box
+            sx={{
+              width: "100%", // Full width for smaller screens
+              maxWidth: "650px", // Max width for larger screens
+              paddingTop: "60px",
+              paddingLeft: { xs: "10px", sm: "20px" }, // Adjust padding for responsiveness
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid item key={button.text} xs={12} sm={6} md={4}>
+                  {/* Responsive grid for buttons */}
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on small screens
+                      maxWidth: 235, // Max width on larger screens
+                      height: 65,
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "16px",
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+         </Grid2>
+        </Box>
+      </Container>
+ 
+      <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",width:"100%" }}
+        >
+          {/* Left Section */}
+          <Grid2
+          container
+            item
+            xs={12}
+            md={6}
+            style={{ padding: "20px",width:"50%" }} // Adjusted width and padding for responsiveness
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width for small screens
+                  maxWidth: "316px", // Keep max width for larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+         <Grid2>
+         <Box
+            sx={{
+              width: "100%", // Full width for smaller screens
+              maxWidth: "650px", // Max width for larger screens
+              paddingTop: "60px",
+              paddingLeft: { xs: "10px", sm: "20px" }, // Adjust padding for responsiveness
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid item key={button.text} xs={12} sm={6} md={4}>
+                  {/* Responsive grid for buttons */}
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on small screens
+                      maxWidth: 235, // Max width on larger screens
+                      height: 65,
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "16px",
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+         </Grid2>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",width:"100%" }}
+        >
+          {/* Left Section */}
+          <Grid2
+          container
+            item
+            xs={12}
+            md={6}
+            style={{ padding: "20px",width:"50%" }} // Adjusted width and padding for responsiveness
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width for small screens
+                  maxWidth: "316px", // Keep max width for larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+         <Grid2>
+         <Box
+            sx={{
+              width: "100%", // Full width for smaller screens
+              maxWidth: "650px", // Max width for larger screens
+              paddingTop: "60px",
+              paddingLeft: { xs: "10px", sm: "20px" }, // Adjust padding for responsiveness
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid item key={button.text} xs={12} sm={6} md={4}>
+                  {/* Responsive grid for buttons */}
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on small screens
+                      maxWidth: 235, // Max width on larger screens
+                      height: 65,
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "16px",
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+         </Grid2>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",width:"100%" }}
+        >
+          {/* Left Section */}
+          <Grid2
+          container
+            item
+            xs={12}
+            md={6}
+            style={{ padding: "20px",width:"50%" }} // Adjusted width and padding for responsiveness
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width for small screens
+                  maxWidth: "316px", // Keep max width for larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+         <Grid2>
+         <Box
+            sx={{
+              width: "100%", // Full width for smaller screens
+              maxWidth: "650px", // Max width for larger screens
+              paddingTop: "60px",
+              paddingLeft: { xs: "10px", sm: "20px" }, // Adjust padding for responsiveness
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid item key={button.text} xs={12} sm={6} md={4}>
+                  {/* Responsive grid for buttons */}
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on small screens
+                      maxWidth: 235, // Max width on larger screens
+                      height: 65,
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "16px",
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+         </Grid2>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",width:"100%" }}
+        >
+          {/* Left Section */}
+          <Grid2
+          container
+            item
+            xs={12}
+            md={6}
+            style={{ padding: "20px",width:"50%" }} // Adjusted width and padding for responsiveness
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "100%", // Make width responsive
+                  height: "auto",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width for small screens
+                  maxWidth: "316px", // Keep max width for larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+         <Grid2>
+         <Box
+            sx={{
+              width: "100%", // Full width for smaller screens
+              maxWidth: "650px", // Max width for larger screens
+              paddingTop: "60px",
+              paddingLeft: { xs: "10px", sm: "20px" }, // Adjust padding for responsiveness
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid item key={button.text} xs={12} sm={6} md={4}>
+                  {/* Responsive grid for buttons */}
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on small screens
+                      maxWidth: 235, // Max width on larger screens
+                      height: 65,
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "16px",
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+         </Grid2>
+        </Box>
+      </Container>
+ 
+ width: "100%",
+ 
+Grid2
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
+          {/* Left Section */}
+          <Grid2
+            item
+            xs={12}
+            md={6}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+                padding: "20px", // Added padding for smaller screens
+                width: "100%", // Make it full width on smaller screens
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                  width:"520px"
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width on small screens
+                  maxWidth: "316px", // Limit width on larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "1rem", // Responsive font size
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box
+            style={{
+              width: "100%",
+              paddingTop: "60px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid
+                  item
+                  key={button.text}
+                  xs={6}
+                  sm={4}
+                  md={3}
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on smaller screens
+                      height: "65px",
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "1rem", // Responsive font size
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+ <Box
+      sx={{
+        width: "100%", // Full width for smaller screens
+        maxWidth: "650px", // Max width for larger screens
+        paddingTop: "60px",
+        paddingLeft: { xs: "10px", sm: "20px" }, // Adjust padding for responsiveness
+      }}
+    >
+      <Grid container spacing={2} justifyContent="center">
+        {buttons.map((button) => (
+          <Grid item key={button.text} xs={12} sm={6} md={4}>
+            {/* Responsive grid for buttons */}
+            <Button
+              variant="outlined"
+              to={button.link}
+              sx={{
+                width: "100%", // Full width on small screens
+                maxWidth: 235, // Max width on larger screens
+                height: 65,
+                padding: "17px",
+                borderColor: "#e7760d",
+                color: "black",
+                fontFamily: '"Inter", sans-serif',
+                textTransform: "capitalize",
+                fontSize: "16px",
+                fontWeight: 500,
+                lineHeight: "32px",
+                textAlign: "center",
+                backgroundColor: "#FFFFFF",
+                "&:hover": {
+                  opacity: 0.8,
+                },
+              }}
+            >
+              {button.text}
+            </Button>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
+          {/* Left Section */}
+          <Grid2
+            item
+            xs={12}
+            md={6}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+                padding: "20px", // Added padding for smaller screens
+                width: "100%", // Make it full width on smaller screens
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                  width:"520px"
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width on small screens
+                  maxWidth: "316px", // Limit width on larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "1rem", // Responsive font size
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box
+            style={{
+              width: "100%",
+              paddingTop: "60px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid
+                  item
+                  key={button.text}
+                  xs={6}
+                  sm={4}
+                  md={3}
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on smaller screens
+                      height: "65px",
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "1rem", // Responsive font size
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
+          {/* Left Section */}
+          <Grid2
+            item
+            xs={12}
+            md={6}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+                padding: "20px", // Added padding for smaller screens
+                width: "100%", // Make it full width on smaller screens
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "1.2",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+                  width:"520px"
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width on small screens
+                  maxWidth: "316px", // Limit width on larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "1rem", // Responsive font size
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box
+            style={{
+              width: "100%",
+              paddingTop: "60px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid
+                  item
+                  key={button.text}
+                  xs={6}
+                  sm={4}
+                  md={3}
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "100%", // Full width on smaller screens
+                      height: "65px",
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "1rem", // Responsive font size
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+flexWrap: "wrap"
+ 
+minHeight: "400px" 
+ 
+<Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
+ 
+<Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",alignItems: "flex-start" }}
+        >
+ 
+flexWrap: "wrap
+ 
+  <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
+          {/* Left Section */}
+          <Grid2
+            item
+            xs={12}
+            md={6}
+            style={{ display: "flex", justifyContent: "center",width: "45%" }}
+          >
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+                padding: "20px", // Added padding for smaller screens
+                // width: "100%", // Make it full width on smaller screens
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "2rem", // Responsive font size
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                  width: "563px"
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  font: "Poppins",
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "1rem",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "100%", // Full width on small screens
+                  maxWidth: "316px", // Limit width on larger screens
+                  height: "54px",
+                  borderRadius: "5px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "1rem", // Responsive font size
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box
+            style={{
+             width:"650px",
+              paddingTop: "60px",
+            //   display: "flex",
+            //   justifyContent: "center",
+            }}
+          >
+            <Grid container spacing={2} justifyContent="center">
+              {buttons.map((button) => (
+                <Grid
+                  item
+                  key={button.text}
+                  xs={6}
+                  sm={4}
+                  md={3}
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Button
+                    variant="outlined"
+                    to={button.link}
+                    sx={{
+                      width: "235px", // Full width on smaller screens
+                      height: "65px",
+                      padding: "17px",
+                      borderColor: "#e7760d",
+                      color: "black",
+                      fontFamily: '"Inter", sans-serif',
+                      textTransform: "capitalize",
+                      fontSize: "1rem", // Responsive font size
+                      fontWeight: 500,
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      backgroundColor: "#FFFFFF",
+                      "&:hover": {
+                        opacity: 0.8,
+                      },
+                    }}
+                  >
+                    {button.text}
+                  </Button>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+00%
+ 
+ width: "100%",
+ 
+ fontWeight: "300",
+                  fontSize: "1rem", // Responsive font size
+                  lineHeight: "1.5",
+ 
+
+                width: "100%", // Make it full width on smaller screens
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+100%
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+ <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+  <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+  <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+  <Container style={{ marginTop: "20px", background: "gray" }}>
+        <Box style={{ display: "flex", flexDirection: "row" }}>
+          {/* Left Section */}
+          <Grid2 item xs={12} md={6} style={{ width: "45%" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+                paddingBottom: "40px",
+              }}
+            >
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  width: "563px",
+                  height: "40px",
+                  font: "Poppins",
+                  fontWeight: "700",
+                  fontSize: "34px",
+                  lineHeight: "40px",
+                  paddingTop: "40px",
+                }}
+              >
+                Ready to dive into{" "}
+                <span style={{ color: "#271555" }}>HABOT?</span>
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                style={{
+                  width: "520px",
+                  height: "100px",
+                  font: "Poppins",
+                  fontWeight: "300",
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                }}
+              >
+                Signing up with HABOT opens the door to a world of new
+                opportunities and potential for business growth. Gain access to
+                a vibrant community of like-minded individuals, unlock valuable
+                resources, and take the first step towards realizing your
+                entrepreneurial dreams.
+              </Typography>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  width: "316px",
+                  height: "54px",
+                  borderRadius: "5px",
+                  border: "1px",
+                  background: "#00732F",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  lineHeight: "24px",
+                  textAlign: "center",
+                  font: "Poppins",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                Sign up Today !
+                <img
+                  src={vector}
+                  style={{
+                    position: "absolute",
+                    left: "calc(50% + 60px)",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    marginLeft: "38px",
+                  }}
+                  alt="Icon"
+                />
+              </Button>
+            </Box>
+          </Grid2>
+
+          {/* Right Section */}
+          <Box style={{width:"650px",paddingTop:"60px"}}>
+          <Grid container spacing={2} justifyContent="center">
+            {buttons.map((button) => (
+              <Grid item key={button.text}>
+                <Button
+                  variant="outlined"
+                  to={button.link}
+                  sx={{
+                    width: 235,
+                    height: 65,
+                    padding: "17px",
+                    borderColor: "#e7760d",
+                    color: "black",
+                    fontFamily:'"Inter", sans-serif',
+                    textTransform:"capitalize",
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    lineHeight: "32px",
+                    textAlign: "center",
+                    backgroundColor: "#FFFFFF",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
+                  }}
+                >
+                  {button.text}
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
+          </Box>
+        </Box>
+      </Container>
+ 
+
+// ,                    fontFamily: ,
+ 
+
+                    textTransform:"capitalize",
+ 
+
+                    textTransform:"capitalize"
+ 
+
+                    textTransform:
+ 
+
+                    font:"sm",
+ 
+// import { Link, BrowserRouter as Router } from 'react-router-dom';
+
+ 
+
+            // component={Link}
+ 
+
+import { Link } from "react-router-dom";
+ 
+import { Link } from "react-router-dom";
+ 
+Link
+ 
+
+import { Link } from "react-router-dom";
+ 
+ width: "100%",
+                height: "60px",
+                fontSize: "16px",
+                lineHeight: "32px",
+                textAlign: "center",
+                fontWeight: "500",
+                background: "#ffffff",
+                color: "#3E3E3E",
+                font: "Inter",
+                border: "1px solid #E7760D",
+                borderRadius: "5px",
+ 
+width: "100%",
+                height: "60px",
+                fontSize: "16px",
+                lineHeight: "32px",
+                textAlign: "center",
+                fontWeight: "500",
+                background: "#ffffff",
+                color: "#3E3E3E",
+                font: "Inter",
+                border: "1px solid #E7760D",
+                borderRadius: "5px",
+ 
+ variant="contained"
+              color="primary"
+              style={{
+                width: "100%",
+                height: "60px",
+                fontSize: "16px",
+                lineHeight: "32px",
+                textAlign: "center",
+                fontWeight: "500",
+                background: "#ffffff",
+                color: "#3E3E3E",
+                font: "Inter",
+                border: "1px solid #E7760D",
+                borderRadius: "5px",
+ 
+  <Grid2
+            item
+            xs={12}
+            md={6}
+            style={{ padding: "10px", width: "541px" }}
+          >
+            <Grid2 container spacing={2}>
+              <Box
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  paddingTop: "55px",
+                  paddingLeft: "80px",
+                  gap: "20px",
+                }}
+              >
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+              </Box>
+            </Grid2>
+          </Grid2>
+ 
+  <Grid2
+            item
+            xs={12}
+            md={6}
+            style={{ padding: "10px", width: "541px" }}
+          >
+            <Grid2 container spacing={2}>
+              <Box
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  paddingTop: "55px",
+                  paddingLeft: "80px",
+                  gap: "20px",
+                }}
+              >
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+                <Grid2 item xs={6}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      width: "220px",
+                      height: "60px",
+                      fontSize: "16px",
+                      lineHeight: "32px",
+                      textAlign: "center",
+                      fontWeight: "500",
+                      background: "#ffffff",
+                      color: "#3E3E3E",
+                      font: "Inter",
+                      border: "1px solid #E7760D",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Button 1
+                  </Button>
+                </Grid2>
+              </Box>
+            </Grid2>
+          </Grid2>
+ 
+width:"40%"
+ 
+<Grid2 item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>
+                  Button 2
+                </Button>
+              </Grid2>
+              <Grid2 item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>
+                  Button 3
+                </Button>
+              </Grid2>
+ 
+
+              <Grid2 item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>
+                  Button 3
+                </Button>
+              </Grid2>
+              <Grid2 item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>
+                  Button 3
+                </Button>
+              </Grid2>
+              <Grid2 item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>
+                  Button 3
+                </Button>
+              </Grid2
+ 
+background: "gray"
+ 
+marginBottom:"15px"
+ 
+<img src={vector} style={{marginLeft:"20px",}}/>
+ 
+Left Button
+ 
+ height: "55vh"
+ 
+spacing={5}
+ 
+font:"Poppins"
+ 
+xs={12}
+ 
+md={4}
+ 
+padding:"20px"
+ 
+
+      </Grid2>
+ 
+<Grid2 container spacing={16} style={{background:"lightblue",}}>
+ 
+
+            <Grid2 item xs={6}>
+              <Button variant="contained" color="primary" fullWidth>
+                Button 4
+              </Button>
+            </Grid2>
+            {/* <Grid2 item xs={6}>
+              <Button variant="contained" color="primary" fullWidth>
+                Button 5
+              </Button>
+            </Grid2>
+            <Grid2 item xs={6}>
+              <Button variant="contained" color="primary" fullWidth>
+                Button 6
+              </Button>
+            </Grid2> */}
+ 
+This is a paragraph inside the left div.
+ 
+Left Heading
+ 
+<Container>
+        <Grid2>
+        </Grid2>
+    </Container>
+ 
+
+            <Card></Card>
+            <Card></Card>
+ 

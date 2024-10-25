@@ -1,0 +1,14 @@
+.title-work{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font: Poppins;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.title-work p{
+    font-size: 14px;
+    width: 80%;
+}

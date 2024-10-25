@@ -1,0 +1,102 @@
+.supp-container {
+    width: 100%;
+    height: 200px;
+    background: #e8fbff;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .supp-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Use percentage width for larger screens */
+    min-width: 300px; /* Minimum width to prevent elements from becoming too small */
+    height: 200px;
+    
+    position: relative;
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  h1 span {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  h1 span::before,
+  h1 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #d25235; /* Orange underline */
+    left: 0;
+  }
+  
+  h1 span::before {
+    bottom: -5px;
+  }
+  
+  h1 span::after {
+    bottom: -5px;
+  }
+  
+  .supp-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Use percentage width for larger screens */
+    min-width: 250px; /* Minimum width to prevent elements from becoming too small */
+    height: 200px;
+    position: relative;
+    box-sizing: border-box; /* Include padding and border in width */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .supp-right button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    width: 100%; /* Full width button */
+    max-width: 216px; /* Maximum width for larger screens */
+    height: 54px;
+    background: #eb7150;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    border-radius: 5px;
+    border: none; /* Remove unnecessary border */
+  }
+  
+  @media (max-width: 768px) {
+    .supp-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .supp-left h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .supp-left, .supp-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .supp-right button {
+        width: 90%; /* Button width adjustment */
+        max-width: 200px;
+        font-size: 0.9rem;
+    }
+}
