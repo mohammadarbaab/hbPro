@@ -42,7 +42,7 @@ import Footer from './Pages/Footer/Footer'
 function App() {
   const videoId = "i8tgRHXx4oQ";
   return (
-    <div>
+    <div className='wrapper'>
       {/* <Page></Page> */}
       <Navbar></Navbar>
       <Hero></Hero>

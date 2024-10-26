@@ -16,7 +16,7 @@ function BuyersPost() {
       <div />
       <div className="buyers-container">
         <div className="flex-box" style={{ backgroundColor: "#E8FBFF" }}>
-          <img src={group33} style={{height:"50px",width:"50px"}}/>
+          <img src={group33} style={{height:"52px",width:"52px"}}/>
           <h1>Select Your Role and Sign Up</h1>
         </div>
         <div className="flex-box">
