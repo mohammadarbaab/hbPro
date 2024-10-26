@@ -9,6 +9,8 @@
 .toggle-center{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
 }

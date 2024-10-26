@@ -37,6 +37,7 @@ import DashboardMain from './Pages/Dashboard/DashboardMain/DashboardMain'
 import YtSection from './Pages/YtSection/YtSection'
 import SupplierFind from './Pages/FindYou/SupplierFind'
 import BuyersPost from './Pages/BuyerPost/Buyers/Buyers'
+import Footer from './Pages/Footer/Footer'
 
 function App() {
   const videoId = "i8tgRHXx4oQ";
@@ -49,6 +50,7 @@ function App() {
       <YtSection videoId={videoId}></YtSection>
       <SupplierFind></SupplierFind>
       <BuyersPost></BuyersPost>
+      <Footer></Footer>
     </div>
   )
 }
