@@ -9,7 +9,7 @@ function DashboardMain() {
     <div className="dash-container">
       <div className="dash-left" style={{ color: "black" }}>
         <h1>
-          Ready to dive into <span style={{ color: "#272555" }}>HABOT?</span>
+          Ready to dive into <font style={{ color: "#272555" }}>HABOT?</font>
         </h1>
         <p>
           Signing up with HABOT opens the door to a world of new opportunities

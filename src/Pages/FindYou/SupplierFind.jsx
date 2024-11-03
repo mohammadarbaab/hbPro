@@ -7,7 +7,7 @@ function SupplierFind() {
     <div className="supp-container">
       <div class="supp-left">
         <h1>
-          Let Suppliers <span>Find You</span>
+          Let Suppliers <span className="find-you">Find You</span>
         </h1>
       </div>
       <div className="supp-right">
