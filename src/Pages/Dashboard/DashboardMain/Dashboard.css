@@ -1,114 +1,115 @@
 .dash-container {
-    display: flex;
-    justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-    flex-direction: row;
-    /* background-color: #00732f; */
-    padding: 10px;
-    margin-top: 60px;
-    gap: 85px; /* Add gap between left and right sections */
-  }
-  
-  .dash-left {
-    flex: 1;
-    padding: 20px;
-    min-width: 300px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 33px;
-  
-  }
-  
-  .dash-left h1 {
-    font-family: Poppins;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.5rem;
-    text-align: left;
-  }
-  
-  .dash-left p {
-    font-family: Poppins, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.75rem;
-    line-height: 28px;
-    width: 510px;
-    text-align: left;
-    text-align: justify;
-  }
-  
-  .dash-button {
-    font-family: Poppins, sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5rem;
-    text-align: center;
-    background-color: #00732f;
-    color: white;
-    width: 100%;
-    max-width: 300px;
-    height: 54px;
-    border-radius: 5px;
-    border: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px; /* Add padding for better button appearance */
-  }
-  
-  .dash-button img {
-    position: absolute;
-    right: 10px; /* Adjust icon position */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px; /* Set a fixed width for the icon */
-    height: 24px; /* Set a fixed height for the icon */
-  }
-  /* changing */
-  .dash-right {
-    flex: 1;
-    /* padding: 20px; */
-    min-width: 300px;
-    box-sizing: border-box;
-    /* display: flex;
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  flex-direction: row;
+  /* background-color: #00732f; */
+  padding: 10px;
+  margin-top: 60px;
+  gap: 85px; /* Add gap between left and right sections */
+}
+
+.dash-left {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.dash-left h1 {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: left;
+}
+
+.dash-left p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75rem;
+  line-height: 28px;
+  width: 510px;
+  text-align: left;
+  text-align: justify;
+}
+
+.dash-button {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #00732f;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  height: 54px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Add padding for better button appearance */
+}
+
+.dash-button img {
+  position: absolute;
+  right: 10px; /* Adjust icon position */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px; /* Set a fixed width for the icon */
+  height: 24px; /* Set a fixed height for the icon */
+}
+/* changing */
+.dash-right {
+  flex: 1;
+  /* padding: 20px; */
+  min-width: 300px;
+  /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; */
-    /* Removed margin-left */
-    /* background-color: aqua; */
+  /* Removed margin-left */
+  /* background-color: aqua; */
+}
+@media (max-width: 768px) {
+  .dash-container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
   }
-  @media (max-width: 768px) {
-    .dash-container {
-      flex-direction: column;
-      align-items: center;
-      padding-left: 0;
-      justify-content: center;
-    }
-  
-    .dash-left,
-    .dash-right {
-      width: 100%;
-      padding: 20px;
-    }
-  
-    .dash-left p {
-      width: 100%; 
-      text-align: left; 
-      text-align: justify;
-      font-family: "Poppins", sans-serif;
-    }
-    .dash-left h1 {
-      font-family: "Poppins", sans-serif;
+
+  /* .dash-left, */
+  .dash-right {
+    width: 100%;
+    padding: 20px;
   }
-  
-  
-    .dash-button {
-      width: 100%;
-      max-width: 317px;
-      margin-bottom: 20px; /* Add margin for better spacing */
-    }
-  }  
+
+  .dash-left p {
+    width: 100%;
+    text-align: left;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+  }
+  .dash-left h1 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .dash-button {
+    width: 100%;
+    max-width: 317px;
+    margin-bottom: 20px; /* Add margin for better spacing */
+  }
+  /* .dash-right{
+    background-color: aqua;
+  } */
+}

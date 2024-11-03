@@ -142,7 +142,8 @@
       }
       .footer-container, .footer-main {
           width: 100%; /* Ensure these take full width */
-          padding: 0 0px; /* Optional: Add some padding if needed */
+          padding-top: 15px; /* Optional: Add some padding if needed */
+          padding-bottom: 25px;
       }
       .footer-main{
         margin-right: 23px;

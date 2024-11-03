@@ -123,6 +123,12 @@
   .hero {
     width: 85%;
   }
+  .hero-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+  }
   .hero-text h1 {
     font-size: 2rem;
   }
