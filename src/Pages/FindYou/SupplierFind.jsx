@@ -11,7 +11,7 @@ function SupplierFind() {
         </h1>
       </div>
       <div className="supp-right">
-        <a href="/signup">
+        <a href="#">
           <button>Get Verified</button>
         </a>
       </div>

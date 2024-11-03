@@ -1,12 +1,16 @@
 .footer-container {
   width: 100%;
-  height: auto; 
+  height: 32vh; 
   gap: 0px;
   background: #123557;
-  padding-top: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 22px;
+  /* padding-top: 22px;
+  padding-left: 30px;
+  padding-right: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 22px; */
 }
 
 .footer-main {
@@ -14,16 +18,16 @@
   height: auto; 
   margin: auto;
   gap: 0px;
-  border-top: 1px solid #ffffff 20% !important;
-  border-bottom: 1px solid #ffffff 20% !important;
+  /* border-top: 1px solid #ffffff 20% !important;
+  border-bottom: 1px solid #ffffff 20% !important; */
   border-left: 0;
   display: flex;
-  margin-left: 25px;
+  /* margin-left: 30px; */
   flex-direction: row;
   justify-content: space-between; 
   align-items: center;
   padding-left: 20px;
-  box-shadow: 0 -5px 6px -8px #ffffff, 0 5px 6px -8px #ffffff !important;
+  /* box-shadow: 0 -5px 6px -8px #ffffff, 0 5px 6px -8px #ffffff !important; */
 }
 
 /* Footer Container */
@@ -60,7 +64,7 @@
   font-size: 12px;
   font-weight: 300;
   color: #FFFFFF;
-  font:Inter;
+  font:"Inter";
 
 }
 

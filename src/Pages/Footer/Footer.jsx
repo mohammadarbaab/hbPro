@@ -8,14 +8,21 @@ import linkdln from "../assets/Item → Link - LinkedIn.png";
 function Footer() {
   return (
     <div className="footer-container">
-      <footer className="footer-main">
+      <footer
+        className="footer-main"
+        style={{
+          boxShadow: "0 -5px 6px -8px #ffffff, 0 5px 6px -8px #ffffff",
+          borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
+        }}
+      >
         <div className="footer-left">
           <div className="footer-col-img">
             <img src={logo2} alt="Logo" />
             <p>© R Singhania</p>
           </div>
           <div className="footer-columns">
-          <div class="footer-col">
+            <div class="footer-col">
               <h4>Company</h4>
               <a href="#">
                 <p>About</p>

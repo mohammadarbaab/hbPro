@@ -26,7 +26,7 @@ function DashboardMain() {
             alignItems: "center",
           }}
         >
-          <a href="/signup" style={{ position: "relative", zIndex: 1 }}>
+          <a href="/signup" style={{ position: "relative", zIndex: 1,marginRight:"30px",font:"Poppins" }}>
             Sign up Today !
           </a>
           <img
@@ -35,8 +35,10 @@ function DashboardMain() {
               position: "absolute",
               left: "calc(50% + 60px)",
               top: "50%",
+              width:"32px",
+              height:"16.8px",
               transform: "translateY(-50%)",
-              marginLeft: "45px",
+              marginLeft: "30px",
             }}
             alt="Icon"
           />

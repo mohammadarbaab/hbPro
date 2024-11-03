@@ -30,8 +30,8 @@ function Navbar() {
           <li>
             <button className="button">
               <span className="content">
-                <a href="/signin">Login</a> <span>/</span>{" "}
-                <a href="/signup">Sign Up</a>
+                <a href="#">Login</a> <span>/</span>{" "}
+                <a href="#">Sign Up</a>
               </span>
             </button>
           </li>

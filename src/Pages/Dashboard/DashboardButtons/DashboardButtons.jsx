@@ -1,5 +1,6 @@
 import React from "react";
 import "./Buttons.css";
+import vector from "../../assets/Vector.png";
 
 function DashboardButtons() {
   const buttons = [
@@ -33,7 +34,11 @@ function DashboardButtons() {
       {buttons.map((button) => {
         return (
           <>
-            <button className="btn-primary">{button.text}</button>
+            <button className="btn-primary">
+              {button.text}
+
+              <img src={vector} className="hover-icon" alt="Icon" />
+            </button>
           </>
         );
       })}

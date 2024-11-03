@@ -7,7 +7,7 @@
     /* background-color: #00732f; */
     padding: 10px;
     margin-top: 60px;
-    gap: 20px; /* Add gap between left and right sections */
+    gap: 85px; /* Add gap between left and right sections */
   }
   
   .dash-left {
@@ -35,7 +35,7 @@
     font-weight: 300;
     line-height: 1.75rem;
     line-height: 28px;
-    /* width: 520px; */
+    width: 510px;
     text-align: left;
     text-align: justify;
   }
@@ -49,7 +49,7 @@
     background-color: #00732f;
     color: white;
     width: 100%;
-    max-width: 317px;
+    max-width: 300px;
     height: 54px;
     border-radius: 5px;
     border: none;
@@ -68,17 +68,18 @@
     width: 24px; /* Set a fixed width for the icon */
     height: 24px; /* Set a fixed height for the icon */
   }
-  
+  /* changing */
   .dash-right {
     flex: 1;
-    padding: 20px;
+    /* padding: 20px; */
     min-width: 300px;
     box-sizing: border-box;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     /* Removed margin-left */
+    /* background-color: aqua; */
   }
   @media (max-width: 768px) {
     .dash-container {

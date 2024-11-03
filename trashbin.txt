@@ -1,3 +1,455 @@
+.footer-container {
+  width: 100%;
+  height: auto; 
+  gap: 0px;
+  background: #123557;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+}
+
+.footer-main {
+  width: 90%;
+  height: auto; 
+  margin: auto;
+  gap: 0px;
+  /* border-top: 1px solid #ffffff 20% !important;
+  border-bottom: 1px solid #ffffff 20% !important; */
+  border-left: 0;
+  display: flex;
+  margin-left: 25px;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  padding-left: 20px;
+  /* box-shadow: 0 -5px 6px -8px #ffffff, 0 5px 6px -8px #ffffff !important; */
+}
+
+/* Footer Container */
+.footer {
+  background-color: #1E3A55; /* Dark blue background */
+  padding: 40px 0;
+  /* text-align: center; */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout of columns */
+.footer-columns {
+  display: flex;
+  justify-content: space-around; /* Space between columns */
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 55px;
+  max-width: 1000px; /* Restrict width */
+  padding: 20px 0;
+  margin-left: 50px;
+}
+
+/* Each footer column */
+.footer-col h4 {
+  font-size: 15.13px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: Arial;
+}
+
+.footer-col p {
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: 300;
+  color: #FFFFFF;
+  font:"Inter";
+
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col a:hover p {
+  text-decoration: underline;
+}
+
+
+.footer-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+.footer-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+.footer-col-img img {
+  width: 150px;
+  margin-top: 22px;
+}
+
+.footer-col-img p {
+  margin-left: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  font: Poppins;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 160px;
+  gap: 20px;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+/* @media (max-width: 1200px) {
+  .footer-main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-main {
+    width: 95%;
+  }
+} */
+
+  @media (max-width: 768px) {
+      .footer-container {
+          display: flex;
+          flex-direction: column; /* Column layout for mobile */
+          align-items: center;
+          overflow: hidden;
+          justify-content: center;
+          gap: 20px; /* Optional spacing between sections */
+      }
+      .footer-container, .footer-main {
+          width: 100%; /* Ensure these take full width */
+          padding: 0 0px; /* Optional: Add some padding if needed */
+      }
+      .footer-main{
+        margin-right: 23px;
+      }
+      
+      
+      .footer-left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      /* .footer-logo {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+      } */
+      .footer-col-img {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+      }
+      .footer-col-img img{
+          margin-bottom: -6px;
+      }
+
+      .footer-main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          gap: 20px;
+          justify-content: center;
+          padding: 10px 0; /* Space around content */
+      }
+
+      .footer-columns {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start; /* Align items at the top */
+          width: auto;
+          padding: 0px;
+          margin: 15px auto 0;
+          gap: 30px; /* Adds spacing between columns */
+      }
+      
+      .footer-column-item { /* Assuming each column has this class */
+          display: flex;
+          flex-direction: column;
+          min-height: 100px; /* Set a minimum height for consistent spacing */
+          justify-content: flex-start; /* Aligns text from the top within each column */
+      }
+      
+
+      .footer-col-img {
+          margin-right: 0; /* Reset margin for smaller screens */
+          align-self: center; /* Center image within column */
+      }
+
+      .footer-icons {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px; /* Space between columns and icons */
+      }
+      .footer-right{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+      }
+      .icons{
+          margin-left: 45px;
+          margin-bottom: 10px;
+      }
+  }
+
+
+
+ 
+
+.singhania-p{
+  font-size: 300;
+  font-size: 16px;
+}
+ 
+#FFFFFF;
+ 
+
+background: ;
+ 
+
+.singhania-p{
+  font-size: 300;
+  font-size: 16px;
+}
+ 
+className="singhania-p"
+ 
+
+  line-height: 32px;
+ 
+0
+ 
+.buttons-container {
+    /* margin-left: 75px; */
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(2, 210px); /* 2 buttons per row, 210px width */
+    gap: 10px; /* Buttons ke beech space */
+    width: 100%;
+  }
+ 
+
+    flex-direction: column;
+ 
+
+  .btn-primary {
+    width: 210px;
+    height: 62px;
+    border: 1px solid #e7760d;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    transition: background-color 0.5s ease;
+  }
+ 
+
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+ 
+0
+ 
+
+    transform: translate(-50%, -50%);
+ 
+
+    height: 16px; /* Adjust size */
+ 
+
+    left: 85%; /* Set horizontal position; adjust as needed */
+ 
+
+    top: 50%; /* Center vertically by default */
+ 
+
+    width: 10px;
+ 
+
+  .btn-primary:hover .hover-icon {
+    left: 10%; /* Change position on hover; adjust as needed */
+  }
+ 
+.btn-primary {
+    width: 210px;
+    height: 62px;
+    border: 1px solid #e7760d;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    margin  : 10px;
+    cursor: pointer;
+    flex: 1; /* Allow buttons to take available space */
+    max-width: 300px; /* Set a maximum width for buttons */
+    transition: background-color 0.5s ease;
+  }
+  .btn-primary img{
+    position: absolute;
+    height: 10px;
+  }
+ 
+
+  .btn-primary {
+    width: 210px;
+    height: 62px;
+    border: 1px solid #e7760d;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    margin  : 10px;
+    cursor: pointer;
+    flex: 1; /* Allow buttons to take available space */
+    max-width: 300px; /* Set a maximum width for buttons */
+    transition: background-color 0.5s ease;
+  }
+  .btn-primary img{
+    position: absolute;
+    height: 10px;
+  }
+ 
+
+  .btn-primary {
+    width: 210px;
+    height: 62px;
+    border: 1px solid #e7760d;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    margin  : 10px;
+    cursor: pointer;
+    flex: 1; /* Allow buttons to take available space */
+    max-width: 300px; /* Set a maximum width for buttons */
+    transition: background-color 0.5s ease;
+  }
+  .btn-primary img{
+    position: absolute;
+    height: 10px;
+  }
+ 
+
+    margin-top: 10px;
+ 
+ .dash-button {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: #00732f;
+    color: white;
+    width: 100%;
+    max-width: 317px;
+    height: 54px;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Add padding for better button appearance */
+  }
+  
+  .dash-button img {
+    position: absolute;
+    right: 10px; /* Adjust icon position */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* Set a fixed width for the icon */
+    height: 24px; /* Set a fixed height for the icon */
+  }
+ 
+
+    display: flex;
+    flex-direction: row;
+ 
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+ 
+<button className="btn-primary">{button.text}</button>
+ 
+
+            <img src={vector} className="hover-icon" alt="Icon" />
+ 
+
+  .btn-primary:hover{
+    
+  }
+ 
+
+              marginTop:"1px",
+ 
+
+              top:"960px",
+ 
+
+  font-family: Inter;
+ 
+
+  margin-bottom: 20px;
+ 
+
+  margin-top: 100px;
+ 
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
 
     /* align-items: center; */
     margin: auto 0;

@@ -58,7 +58,7 @@ function YtSection({ videoId }) {
           <div class="row-yt">
             <img src={check} className="icon-yt" />
             <div class="text-yt">
-             Choose among the suppliers based on the  <span class="line-break">rating and reviews.</span>.
+             Choose among the suppliers based on the  <span class="line-break">rating and reviews.</span>
             </div>
           </div>
         </div>

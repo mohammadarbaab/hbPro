@@ -8,6 +8,7 @@
   background-color: #0f2c50;
   min-height: 410px;
   margin-top: 50px;
+  border-radius: 5px;
   flex-direction: row; /* Default to row for larger screens */
 }
 
@@ -23,12 +24,14 @@
   margin-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  /* background-color: #24d84a; */
 }
 
 .buttons-yt {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 40px;
+  /* background-color: aqua; */
 }
 
 .btn-yt {
@@ -53,10 +56,10 @@
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 50%;
+  left: 47%;
   transform: translateX(-50%);
-  width: 100%;
-  height: 2px;
+  width: 90%;
+  height: 3.5px;
   background-color: #eb7150;
 }
 
@@ -65,7 +68,7 @@
 }
 
 .btn-yt:hover::after {
-  width: 80px;
+  width: 90%;
   height: 2px;
 }
 
